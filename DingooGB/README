@@ -4,193 +4,176 @@
 
 
 
-Что это?
+What is this?
 ~~~~~~~~
-DingooSMS - это эмулятор 8-битных игровых консолей Sega Master System и Game Gear (далее SMS и GG соответственно) для портативной игровой консоли Dingoo A320 (SIM-версия для Native OS). DingooSMS является частью пакета эмуляторов "Dingoo Emulation Pack by lion_rsm".
+DingooSMS is an emulator for 8-bit Sega Master System and Game Gear (hereinafter SMS and GG respectively) gaming consoles for the portable gaming console Dingoo A320 (SIM-version for Native OS). DingooSMS is part of the "Dingoo Emulation Pack by lion_rsm" emulator package.
 
-
-
-Чем этот эмулятор лучше аналогов?
+What makes this emulator better than others?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-На данный момент под Dingoo Native OS существует несколько эмуляторов SMS/GG, которые достаточно успешно выполняют свою задачу. Эмулятор DingooSMS обладает рядом преимуществ перед своимм аналогами:
-	- унифицированный пользовательский интерфейс с удобным и интуитивно понятным управлением;
-	- высокая скорость эмуляции, хорошая совместимость с играми;
-	- функция быстрой перемотки эмуляции вперед (Fast forward);
-	- загрузка сжатых ROM файлов игр, а так же функция автоматического сжатия ROM файлов;
-	- полноэкранное аппаратное масштабирования с использованием IPU;
-	- возможность выбора страны/региона перед запуском игры;
-	- поддержка игр в телевизионных стандартах NTSC и PAL;
-	- поддержка FM-синтезированого звука в играх, поддерживающих данный режим;
-	- поддержка 3D игр (нужны красно-синие анаглифные очки);
-	- поддержка обложек игровых картриджей.
+At the moment, there are several SMS/GG emulators for Dingoo Native OS, which perform their tasks quite successfully. The DingooSMS emulator has several advantages over its counterparts:
+   - Unified user interface with convenient and intuitive control;
+   - High emulation speed, good game compatibility;
+   - Fast forward emulation function (Fast forward);
+   - Loading of compressed ROM game files, as well as an automatic ROM file compression function;
+   - Full-screen hardware scaling using IPU;
+   - Ability to select a country/region before starting the game;
+   - Support for games in NTSC and PAL television standards;
+   - Support for FM-synthesized sound in games that support this mode;
+   - Support for 3D games (red-blue anaglyph glasses required);
+   - Support for game cartridge covers.
 
 
 
-Установка эмулятора
+Emulator Installation
 ~~~~~~~~~~~~~~~~~~~
-Распакуйте zip архив на компьютер в любую папку. В папке окажутся несколько файлов, среди которых будут:
+Unzip the archive on your computer to any folder. Inside the folder, you'll find several files, among them:
 
-	DingooSMS.sim	- собственно, сам эмулятор;
-	README			- данное руководство;
+	DingooSMS.sim	- the emulator itself;
+	README		- this guide;
 
-Файл DingooSMS.sim скопируйте в папку GAME вашей игровой консоли Dingoo A320, предварительно удалив оттуда старый эмулятор SMS/GG. Если в папке GAME присутствует конфигурационный файл DingooSMS.cfg от предыдущей версии эмулятора, то его так же необходимо удалить. 
+Copy the DingooSMS.sim file to the GAME folder of your Dingoo A320 gaming console, removing any old SMS/GG emulator from there beforehand. If there's a DingooSMS.cfg configuration file from a previous version of the emulator in the GAME folder, it should also be deleted.
 
-Добавьте в Dingoo игры для Sega Master System в формате .sms или Sega Game Gear в формате .gg, если таковые отсутствуют. Рекомендуется держать игры SMS и GG в раздельных папках, чтобы избежать конфликта имен при сохранении игровых состояний и файлов настроек.
+Add Sega Master System games in .sms format or Sega Game Gear games in .gg format to your Dingoo if they are not already present. It is recommended to keep SMS and GG games in separate folders to avoid name conflicts when saving game states and setting files.
 
 
 
-Использование эмулятора
+Using the Emulator
 ~~~~~~~~~~~~~~~~~~~~~~~
-Выберите пункт "Interesting game" в меню "Game center" на вашей Dingoo. В браузере файлов отыщите свою папку с играми SMS или GG, выберите интересующую игру и нажмите кнопку "A". Запустится эмулятор DingooSMS, который загрузит и запустит на выполнение выбранную вами игру. Для входа в меню эмулятора нажмите одновременно "Start" и "Select" или кнопку "Power".
+Select "Interesting game" from the "Game center" menu on your Dingoo. In the file browser, find your folder with SMS or GG games, select the game you're interested in, and press the "A" button. The DingooSMS emulator will launch, load, and run the game you selected. To enter the emulator menu, press "Start" and "Select" simultaneously or the "Power" button.
 
 
 
-Поддержка сжатых ROM файлов
+Support for Compressed ROM Files
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Эмулятор DingooSMS поддерживает загрузку ROM файлов, сжатых по алгоритму ZIP. Для создания сжатого ROM файла необходимо соответствующий файл .sms или .gg упаковать при помощи подходящего архиватора в .zip. Полученный .zip необходимо переименовать обратно в .sms или .gg и закинуть в Dingoo. При открытии файла игры эмулятор автоматически распознает сжатие и производит распаковку.
+DingooSMS supports loading ROM files compressed using the ZIP algorithm. To create a compressed ROM file, pack the respective .sms or .gg file using a suitable archiver into .zip. Rename the obtained .zip back to .sms or .gg and transfer it to Dingoo. When opening the game file, the emulator will automatically recognize the compression and decompress it.
 
-Так же эмулятор способен самостоятельно сжимать ROM файлы. Если данная функция активна и загруженная игра не была сжата ранее, эмулятор при выходе предложит сжать ROM файл данной игры. Используйте возможность сжатия SMS/GG ROM файлов для экономии памяти Dingoo!
+The emulator is also capable of compressing ROM files independently. If this function is active and the loaded game wasn't compressed previously, the emulator will offer to compress the ROM file of this game upon exit. Utilize the compression feature for SMS/GG ROM files to save memory on Dingoo!
 
 
 
-Поддержка обложек картриджей
+Support for Cartridge Cover Files
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-DingooSMS умеет загружать файлы обложек картриджей. Обложка отображается во всех меню эмулятора, кроме основного меню. Файл обложки представляет собой изображение в формате PNG 24-bit с размерами 136-146 х 200 px для портретной ориентации и 200 х 136-146 px для альбомной ориентации. Файл с изображением обложки должен иметь такое же имя, как и файл игры, для которой создана обложка. Примеры обложек для некоторых игр можно найти в пакете поставки эмулятора.
+DingooSMS can load cartridge cover files. The cover is displayed in all emulator menus except the main menu. The cover file is a 24-bit PNG image with dimensions of 136-146 x 200 px for portrait orientation and 200 x 136-146 px for landscape orientation. The cover image file should have the same name as the game file it's created for. Examples of covers for some games can be found in the emulator delivery package.
 
 
 
-Основное меню эмулятора
+# Emulator Main Menu
 ~~~~~~~~~~~~~~~~~~~~~~~
-Resume
-	Выход из меню и возврат в игру. Так же в игру можно вернуться по нажатию клавиши "B".
-	
-Save state
-	Сохранение текущего игрового состояния в файл. Файл состояния сохраняется в той же папке, где расположена игра. Имя файла состоит из названия игры и расширения от .sv0 до .sv9. Клавишами "Left" и "Right" можно выбрать логический слот, в который будет сохраняться состояние, клавишей "A" производится сохранение. Всего доступно 10 слотов. В окошке справа отображается скриншот игрового состояния, сохраненного в выбранном слоте.
-	
-Load state
-	Загрузка игрового состояния из файла. Файл должен располагаться в той же папке, что и игра, название должно совпадать с названием игры а расширение должно быть от .sv0 до .sv9. Клавишами "Left" и "Right" необходимо выбрать слот с нужным игровым состоянием и по клавише "A" загрузить его. После загрузки игрового состояния эмулятор автоматически вернется в игру. Находясь на пункте "Load state" или "Save state", по нажатию на клавишу "X" можно удалить игровое состояние из выбраного слота, при этом, после подтверждения ваших намерений, удаляется соответствующий файл игрового состояния.
-	
-Skip frames
-	Данная опция указывает на то, сколько проэмулированных кадров будет опущено до момента отрисовки на экран. Опция позволяет повысить скорость эмуляции за счет потери в плавности изображения. Значение "0" означает, что на экран отрисовываются все проэмулированные кадры. Значение "AUTO" означает, что эмулятор самостоятельно решает какие кадры и когда будут опущены для достижения 100% скорости эмуляции игры. Клавишами "Left" и "Right" можно выбрать необходимое значение, по нажатию клавиши "A" будет выбрано значение "AUTO". Если быстродействия эмулятора не достаточно, рекомендуется выставить эту опцию в "AUTO".
-	
-Full screen
-	Опция позволяет настроить вывод изображения либо растянутым на всю площадь экрана Dingoo, либо на вывод в родном разрешении по центру экрана с обрамляющими черными полями. При недостаточной скорости эмуляции рекомендуется выставить опцию в "OFF", т.к. отрисовка в родном разрешении не требует масштабирования и работает быстрее.
-	
-Sound volume
-	Данная опция позволяет задать громкость звука либо отключить звук вовсе. Клавишами "Left" и "Right" можно выбрать необходимое значение, по нажатию клавиши "A" будет выбрано значение "OFF". Если скорость эмуляции недостаточна, попробуйте выставить значение опции в "OFF".
-	
-Advanced sets
-	Меню с набором дополнительных опций.
-	
-Reset
-	Сброс игры в начальное состояние. В последующем диалоговом экране необходимо подтвердить свои действия.
-	
-Exit
-	Выход из DingooSMS и возврат в меню Dingoo.
+**Resume**
+- Exit the menu and return to the game. You can also return to the game by pressing the "B" key.
 
+**Save state**
+- Save the current game state to a file. The state file is saved in the same folder as the game. The filename consists of the game's name and an extension from .sv0 to .sv9. Use the "Left" and "Right" keys to select a logical slot to save the state, and press "A" to save. There are a total of 10 slots available. A screenshot of the game state saved in the selected slot is displayed on the right.
 
+**Load state**
+- Load the game state from a file. The file should be in the same folder as the game, and its name should match the game's name with an extension from .sv0 to .sv9. Use the "Left" and "Right" keys to select a slot with the desired game state, and press "A" to load it. After loading the game state, the emulator will automatically return to the game. While on the "Load state" or "Save state" option, you can press the "X" key to delete the game state from the selected slot. Confirm your intentions to delete the corresponding game state file.
 
-Дополнительное меню эмулятора
+**Skip frames**
+- This option specifies how many emulated frames will be skipped before rendering on the screen. It can increase emulation speed at the expense of image smoothness. A value of "0" means that all emulated frames are displayed on the screen. "AUTO" means that the emulator automatically decides which frames to skip to achieve 100% game emulation speed. Use the "Left" and "Right" keys to select the desired value, and press "A" to choose "AUTO." If the emulator's performance is insufficient, it's recommended to set this option to "AUTO."
+
+**Full screen**
+- This option allows you to configure the image output to be stretched across the Dingoo screen or displayed in its native resolution with black borders. If emulation speed is inadequate, it's recommended to set this option to "OFF" as rendering in native resolution requires less processing and is faster.
+
+**Sound volume**
+- This option allows you to set the sound volume or disable sound entirely. Use the "Left" and "Right" keys to select the desired value, and press "A" to choose "OFF." If emulation speed is insufficient, try setting this option to "OFF."
+
+**Advanced sets**
+- Menu with additional options.
+
+**Reset**
+- Reset the game to its initial state. You need to confirm your actions in the subsequent dialog screen.
+
+**Exit**
+- Exit DingooSMS and return to the Dingoo menu.
+
+# Emulator Additional Menu
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Video settings -> Fullscreen scaling
-	Данная опция позволяет задать алгоритм масштабирования изображения при выводе на экран. Значение "HARDWARE" говорит о том, что используется аппаратный блок IPU, выполняющий билинейное масштабирование изображения. Опция актуальна если "Full screen" выставлено в "ON".
-	
-Input settings
-	Данное меню позволяет задать соответствие реальных клавиш Dingoo клавишам виртуального геймпада SMS или портативной консоли GG. Можно переопределить только часть клавиш, в переопределении которых есть смысл.
+**Video settings -> Fullscreen scaling**
+- This option allows you to set the image scaling algorithm when outputting to the screen. "HARDWARE" indicates the use of the hardware IPU block, which performs bilinear image scaling. This option is relevant if "Full screen" is set to "ON."
 
-Input settings -> Diagonals helper
-	Конструкция крестовины Dingoo весьма неудачна, нажимать ее по диагонали очень трудно, при этом точность срабатывания оставляет желять лучшего. Данная опция активирует функцию, призванную улучшить срабатывание диагональных комбинаций клавиш.
-		
-CPU speed, MHz
-	Данная опция позволяет задать частоту работы центрального процессора Dingoo во время эмуляции игры SMS/GG. Нормальное значение частоты работы процессора - 336 MHz. При входе в меню эмулятор автоматически понижает частоту до 336 MHz. Чем выше значение данной опции, тем выше скорость эмуляции, тем быстрее разряжается батарея вашей Dingoo. Клавишами "Left" и "Right" можно выбрать необходимое значение из предопределенного списка, по нажатию клавиши "A" значение опции будет увеличиваться на единицу. Однако, как выяснилось, есть целый ряд частот, которые не приводят к какому-либо разгону процессора, поэтому рекомендуется использовать частоты из предопределенного списка. Значения выше 400 MHz вы выставляете на свой страх и риск, автор эмулятора не несет ответственности за последствия, вызванные вашей манипуляцией с частотой процессора!
-	
-Show FPS mode
-	FPS (Frames Per Second) - это количество кадров, которое эмулятор успевает отрисовать на экран или проэмулировать (в зависимости от режима подсчета) за одну секунду. При значении опции "OFF" вывод счетчика FPS на экран отключен. При значении "RENDERED" на экран выводится количество отрисованных кадров, при значении "EMULATED" - количество виртуальных проэмулированных кадров. По данному значению удобно судить об общей скорости эмуляции. Чем выше значение на экране, тем лучше. Номинальное значение FPS для NTSC игр ~ 60, для PAL ~ 50 в режиме подсчета "EMULATED". Если вы не понимаете назначения этой опции, то ее лучше держать в выключеном состоянии.
-	
-Save global settings
-	Запись настроек эмулятора в файл "DingooSMS.cfg" в папку, где расположен сам эмулятор (как правило, это папка "GAME"). Если файл "DingooSMS.cfg" присутствует, он загружается и применяется при запуске эмулятора.
-	
-Save game settings
-	Запись настроек эмулятора в файл с именем текущей загруженной игры и расширением .cfg, в папку с игрой. Данный файл конфигурации имеет более высокий приоритет, чем "DingooSMS.cfg" и если он присутствует для загружаемой игры, он загружается и применяется вместо "DingooSMS.cfg". Данный механизм позволяет иметь особые настройки эмулятора для конкретной игры.
-	
-About emulator
-	Краткая информация по эмулятору, автору и горячих клавишах управления.
+**Input settings**
+- This menu allows you to map physical Dingoo keys to SMS or GG virtual gamepad keys. You can redefine only some of the keys where it makes sense.
+
+**Input settings -> Diagonals helper**
+- The Dingoo directional pad design is not ideal for pressing diagonals, and it's challenging with accuracy issues. This option activates a function designed to improve the response of diagonal key combinations.
+
+**CPU speed, MHz**
+- This option allows you to set the Dingoo's CPU frequency during SMS/GG game emulation. The normal CPU frequency is 336 MHz. When entering the emulator menu, it automatically lowers the frequency to 336 MHz. Higher values increase emulation speed but drain your Dingoo's battery faster. Use the "Left" and "Right" keys to select a value from the predefined list, and press "A" to increase the option's value by one. However, some frequencies have no effect on CPU performance, so it's recommended to use frequencies from the predefined list. Values above 400 MHz are at your own risk, and the emulator's author is not responsible for any consequences of changing the CPU frequency!
+
+**Show FPS mode**
+- FPS (Frames Per Second) is the number of frames the emulator can render or emulate (depending on the counting mode) in one second. When "OFF" is selected, the FPS counter is disabled. When "RENDERED" is selected, it displays the number of rendered frames, and "EMULATED" shows the number of emulated virtual frames. This value helps assess the overall emulation speed. Higher values are better. The nominal FPS for NTSC games is ~60, and for PAL ~50 in "EMULATED" counting mode. If you don't understand the purpose of this option, it's best to keep it turned off.
+
+**Save global settings**
+- Save emulator settings to the "DingooSMS.cfg" file in the emulator's folder (usually the "GAME" folder). If the "DingooSMS.cfg" file is present, it will be loaded and applied when the emulator starts.
+
+**Save game settings**
+- Save emulator settings to a file named after the currently loaded game with a .cfg extension in the game's folder. This configuration file takes precedence over "DingooSMS.cfg" for the loaded game, allowing specific emulator settings for each game.
+
+**About emulator**
+- Brief information about the emulator, its author, and hotkeys for control.
 
 
 
-Дополнительное меню специальных настроек при запуске эмулятора
+# Additional Special Settings Menu at Emulator Startup
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Часть редко изменяемых настроек, а так же настроек, которые должны применяться перед загрузкой ROM файла игры, вынесена в дополнительное меню специальных настроек эмулятора. Попасть в это меню можно путем удерживания клавиши "Select" во время запуска эмулятора. Для сохранения измененных настроек необходимо войти в основное меню эмулятора, перейти в "Advanced sets" и активировать "Save global settings" или "Save game settings".
+Some rarely changed settings and settings that should be applied before loading a game ROM are placed in the additional special settings menu of the emulator. You can access this menu by holding the "Select" key while starting the emulator. To save the changed settings, you need to enter the emulator's main menu, go to "Advanced sets," and activate "Save global settings" or "Save game settings."
 
-Country/Region
-	Данная опция позволяет задать аппаратную конфигурацию консоли в зависимости от выбранной страны/региона. Загружаемая игра может вести себя на различной аппаратной конфигурации по-разному, например, иметь разные разрешение/частоту кадров, разные тайминги аппаратных компонентов, специфическую локализацию текстов/титульных экранов, аппаратную привязку к региону и тому подобное. Значения опции и отличия в аппаратной конфигурации:
+**Country/Region**
+- This option allows you to set the hardware configuration of the console based on the selected country/region. The loaded game may behave differently on different hardware configurations, such as having different resolutions/frame rates, different timing for hardware components, specific text/title screen localization, hardware region binding, and more. Option values and hardware configuration differences:
+   - AUTO - Automatic region selection based on some characteristics of the ROM file.
+   - US - American region - video standard - NTSC.
+   - EU - European region - video standard - PAL.
+   - JP - Asian region - video standard - NTSC.
 
-		AUTO - автоматический выбор региона на основе некоторых характеристик ROM файла
-		US   - американский регион - видеостандарт - NTSC
-		EU   - европейский регион  - видеостандарт - PAL
-		JP   - азиатский регион    - видеостандарт - NTSC
+**Auto compress ROM**
+- This option enables automatic compression of the ROM file of the currently loaded game when exiting the emulator. If you don't want to compress ROM files for your SMS/GG games, set this option to "OFF."
 
-Auto compress ROM
-	Данная опция позволяет включить функцию автоматического сжатия ROM файла текущей загруженной игры при выходе из эмулятора. Если вы не хотите сжимать ROM файлы ваших SMS/GG игр, то выставите данную опцию в "OFF".
+**Old school mode**
+- If you feel like a seasoned veteran of the old school gaming, you can set this option to "ON" :)
 
-Old school mode
-	Если вы ощущаете себя матёрым волком старой игровой школы, можете выставить данную опцию в "ON" :)
+**Default settings**
+- Reset the emulator settings to their default values. You can later save the reset settings using "Save global settings" or "Save game settings" from the "Advanced sets" menu.
 
-Default setings
-	Сброс настроек эмулятора в значения, заданные по умолчанию. Впоследствии сброшенные в начальное состояние настройки можно сохранить при помощи "Save global settings" или "Save game settings" из меню "Advanced sets".
+**Continue**
+- Exit this additional menu, load the game's ROM file, and transition DingooSMS into emulation mode.
 
-Continue
-	Выход из данного дополнительного меню с последующей загрузкой ROM файла игры и переходом DingooSMS в режим эмуляции.
-
-
-
-
-Комбинации горячих клавиш в игре
+# Hotkey Combinations in the Game
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-В любой момент игры по комбинации клавиш "Start"+"Select" или "Power" вы можете войти в основное меню эмулятора. Так же во время игры можно быстро сохранить в оперативной памяти текущее игровое состояние, нажав комбинацию клавиш "R"+"Select". Загрузить состояние из памяти можно по нажатии "L"+"Start". Комбинации клавиш "L"+"R"+"Up" и "L"+"R"+"Down" позволяют увеличить или уменьшить громкость звука. Удерживание комбинации клавиш "L"+"R"+"Right" переводит эмулятор в режим "Fast forward", позволяя ускоренно перематывать геймплей вперед.
+At any point during the game, you can enter the emulator's main menu by pressing the key combination "Start"+"Select" or "Power." You can also quickly save the current game state in RAM by pressing the key combination "R"+"Select." To load a state from RAM, press "L"+"Start." The key combinations "L"+"R"+"Up" and "L"+"R"+"Down" allow you to increase or decrease the sound volume. Holding the key combination "L"+"R"+"Right" puts the emulator in "Fast forward" mode, allowing you to fast-forward gameplay.
 
-
-
-Работа эмулятора при подключении Dingoo к телевизору
+# Emulator Operation When Connected to a TV
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Если эмулятор запускается на Dingoo, подключенной к телевизору, опции "Full screen" и "CPU speed, MHz" блокируются. При этом опция "Full screen" выставляется в значение "ON", а "CPU speed, MHz" - в "336". Значение последнего параметра вызвано тем, что видеовывод Dingoo на телевизор корректно работает только на частоте процессора 336 MHz.
+When the emulator runs on a Dingoo connected to a TV, the options "Full screen" and "CPU speed, MHz" are locked. The "Full screen" option is set to "ON," and "CPU speed, MHz" is set to "336." The latter value is due to the fact that Dingoo's video output to the TV only works correctly at a CPU frequency of 336 MHz.
 
-
-
-Об авторе
+# About the Author
 ~~~~~~~~~
-DingooSMS создан усилиями lion_rsm в 2011-2012 годах. Свои замечания, предложения и багрепорты можете оставлять на сайте http://a320.emulate.su.
+DingooSMS was created by lion_rsm in 2011-2012. You can leave your comments, suggestions, and bug reports on the website http://a320.emulate.su.
 
-
-
-История изменений
+# Change History
 ~~~~~~~~~~~~~~~~~
 v1.3 - 09.10.2012
-	В режиме эмуляции Game Gear на свободное место экрана выводится частичное изображение консоли Game Gear.  
-	Незначительные изменения и улучшения в GUI.
-	Добавлена поддержка отображения обложек игровых картриджей.
-	Незначительные изменения и улучшения в коде.
+- In Game Gear emulation mode, a partial image of the Game Gear console is displayed on the screen.
+- Minor changes and improvements to the GUI.
+- Added support for displaying game cartridge covers.
+- Minor changes and improvements in the code.
 
 v1.2 - 09.05.2012
-	Добавлена поддержка 3D игр (нужны красно-синие анаглифные очки).
-	Исправлен баг в повидении OSD после загрузки игрового состояния, приводящего к смене разрешения экрана SMS.
-	Исправлен баг с невозможностью переопределения клавиш для Game Gear.
-	Изменены тексты некоторых информационных сообщений.
-	Изменен формат и добавлена проверка версии файла конфигурации (*.cfg) для решения проблемы, приводившей к зависаниям эмулятора при использовании  старого несовместимого файла конфигурации.
-	Изменен формат и добавлена проверка принадлежности файла игрового состояния (*.sv0 - *.sv9) эмулятору DingooSMS.
-	Специальные режимы запуска эмулятора упразднены, вместо них реализована возможность попасть в дополнительное меню при запуске эмулятора.
-	Добавлено дополнительное меню специальных настроек эмулятора (Extra menu), часть настроек перенесена в данное меню.
-	Добавлен экспериментальный режим работы эмулятора "Old school mode" для хардкорных игроков.
-	Улучшения во внешнем виде и анимации пользовательского интерфейса (теперь он еще более сексуален!).
-	Масштабный рефакторинг кода, перевод эмулятора на универсальный фреймворк эмуляции.
+- Added support for 3D games (red-blue anaglyphic glasses required).
+- Fixed a bug in OSD behavior after loading a game state, which caused a change in SMS screen resolution.
+- Fixed a bug with the inability to redefine keys for Game Gear.
+- Changed the texts of some informational messages.
+- Changed the format and added version file configuration (*.cfg) checks to resolve issues leading to emulator freezes when using an old incompatible configuration file.
+- Changed the format and added checks for file ownership of DingooSMS game state files (*.sv0 - *.sv9).
+- Special startup modes of the emulator abolished; instead, the ability to access an additional menu when starting the emulator has been implemented.
+- Added an experimental "Old school mode" for hardcore gamers.
+- Improvements in the appearance and animation of the user interface (it's even more stylish now!).
+- Extensive code refactoring, transitioning the emulator to a universal emulation framework.
 
 v1.1 - 04.04.2012
-	Исправлено ряд багов в работе счетчика FPS.
-	Значительно улучшена совместимость с играми.
-	Добавлена неофициальная поддержка игр SEGA SG-1000 (файлы в формате .sg).
-	Множество значительных изменений и улучшений в коде.
+- Fixed several bugs in the FPS counter.
+- Significantly improved compatibility with games.
+- Added unofficial support for SEGA SG-1000 games (files in .sg format).
+- Numerous significant changes and improvements in the code.
 
 v1.0 - 26.03.2012:
-	Первый публичный релиз.
-
-
+- The first public release.
